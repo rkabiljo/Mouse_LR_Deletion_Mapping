@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-sample=240
-REF="resources/mouse_chrM.fa"
+sample=<SAMPLE_NAME> 
+REF="resources/hg38_chrM_mouse.fa"
 GENES_TSV="resources/mito_genes_mouse.tsv"
 OUTDIR="outputs"
 
 mkdir -p "$OUTDIR"
 
-samtools merge -u - /data/hestia/rkabiljo/ONT_mice/${sample}/*.bam \
+#merge all bam files, align, sort
+samtools merge -u - <PATH_TO_UNALIGNED_BAM_FILES>/${sample}/*.bam \
     | samtools fastq -T MM,ML - \
     | seqkit seq -m 500 \
     | minimap2 -ax map-ont -y -t 8 "$REF" - \
