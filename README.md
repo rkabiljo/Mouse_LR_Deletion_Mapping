@@ -2,7 +2,7 @@
 
 Code used to generate the mitochondrial DNA deletion plots for:
 
-> Perez-Rodriguez D, Dalla Rosa I, ... Kabiljo R, ... Holt IJ, Spinazzola A.
+> Diego Perez-Rodriguez1¶, Ilaria Dalla Rosa1¶, Anastasia Magoulopoulou2, Sara Ricciardi1, Samantha Davidson1, Rebecca Lasalandra1, Renata Kabiljo3, Aine Moylett3, Tamara Hill3 ,Tengfei Wan1, Aleck W.E. Jones1, Chloe F. Moss4, Charlotte Zierz5, Melissa L. Salazar1, Radha Desai4, Shar-yin N. Huang6, Yves Pommier6, Monika Hofer7, Robert D.S. Pitceathly3, Martin A.M. Reijns8, Joanna Poulton9, Christos Proukakis1, J. Paul Simons10, Mats Nilsson2, Robert W. Taylor5,11, Ian J. Holt1,12* & Antonella Spinazzola1*. 
 > A stress-adapted fibre state promotes clonal expansion of deleted
 > mitochondrial DNA. *Cell Reports*. 2026.
 
