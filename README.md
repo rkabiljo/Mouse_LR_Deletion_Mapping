@@ -17,7 +17,11 @@ as an arc on a circular map of chrM.
 - `mice_deletions.sh` – main script: alignment, deletion extraction, plotting
 - `deletion_analysis.py` – extracts deletions ≥500 bp from an aligned BAM
 - `plot_dels.R` – draws the circular deletion plot
-- `resources: mito_genes_mouse.tsv` – mouse mitochondrial gene annotation  and mouse reference chrM
+
+## Resources
+
+- `mito_genes_mouse.tsv` – mouse mitochondrial gene annotation
+-  `hg38_chrM_mouse.fa`  mouse reference chrM and indices
 
 ## Requirements
 
@@ -25,6 +29,7 @@ as an arc on a circular map of chrM.
 - Python 3 with `pysam`
 - R with `circlize`, `dplyr`, `readr`
 
+Create a conda environment for dependencies
 ```bash
 conda create -n map_mouse -c conda-forge -c bioconda \
     python=3.11 r-base=4.3 minimap2 samtools seqkit \
