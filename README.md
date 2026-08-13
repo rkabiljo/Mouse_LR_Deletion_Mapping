@@ -44,8 +44,6 @@ Edit the `sample`, and input BAM path at the top of
 bash mice_deletions.sh
 ```
 
-`REF` should point to a mouse chrM reference FASTA (`resources/hg38_chrM_mouse.fa`).
-
 Outputs are written to `outputs/`:
 - `<sample>_aligned_sorted.bam` – aligned reads
 - `<sample>_deletions.tsv` – individual deletion events (read name, breakpoints, size)
