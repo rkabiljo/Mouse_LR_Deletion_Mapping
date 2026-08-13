@@ -7,9 +7,8 @@
 
 ## Overview
 
-This code aligns ONT reads (unaligned bam files) to the mouse mitochondrial genome (chrM), extracts
-large deletions directly from read CIGAR strings, and plots each deletion
-as an arc on a circular map of mouse chrM.
+This code aligns ONT reads (unaligned bam files) to the mouse mitochondrial genome (chrM) with specific aligner settings to fid deletions, extracts
+large deletions directly from read CIGAR strings, and plots each deletion as an arc on a circular map of mouse chrM.
 
 ## Files
 
