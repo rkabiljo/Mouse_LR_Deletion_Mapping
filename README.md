@@ -8,9 +8,9 @@ Code used to generate the mitochondrial DNA deletion plots for:
 
 ## Overview
 
-This code aligns reads to the mouse mitochondrial genome (chrM), extracts
+This code aligns ONT reads (unaligned bam files) to the mouse mitochondrial genome (chrM), extracts
 large deletions directly from read CIGAR strings, and plots each deletion
-as an arc on a circular map of chrM.
+as an arc on a circular map of mouse chrM.
 
 ## Files
 
@@ -21,7 +21,7 @@ as an arc on a circular map of chrM.
 ## Resources
 
 - `mito_genes_mouse.tsv` – mouse mitochondrial gene annotation
--  `hg38_chrM_mouse.fa`  mouse reference chrM and indices
+- `hg38_chrM_mouse.fa`  mouse reference chrM and indices
 
 ## Requirements
 
@@ -29,7 +29,7 @@ as an arc on a circular map of chrM.
 - Python 3 with `pysam`
 - R with `circlize`, `dplyr`, `readr`
 
-Create a conda environment for dependencies
+Create a conda environment for dependencies 
 ```bash
 conda create -n map_mouse -c conda-forge -c bioconda \
     python=3.11 r-base=4.3 minimap2 samtools seqkit \
@@ -39,7 +39,7 @@ conda activate map_mouse
 
 ## Usage
 
-Edit the `sample`, `REF`, and input BAM path at the top of
+Edit the `sample`, and input BAM path at the top of
 `mice_deletions.sh`, then run:
 
 ```bash
